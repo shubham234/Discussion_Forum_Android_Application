@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_quote"
+        android:text="“No matter how busy you may think you are, you must find time for reading, or surrender yourself to self-chosen ignorance.” "
+        android:textColor="#5D8AA8"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="100">
+    <Button 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="ASK QUESTION"
+        android:id="@+id/btn_ask"
+        android:layout_marginTop="20dp"
+        android:layout_weight="50"
+        />
+    <Button 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="VIEW FORUM"
+        android:id="@+id/btn_view"
+        android:layout_weight="50"
+        android:layout_marginTop="20dp"
+        />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="304dp"
+        android:orientation="vertical" >
+        <TextView
+            android:id="@+id/st_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="TextView"
+            android:textSize="40sp" />
+        
+        <TextView 
+            android:id="@+id/st_enroll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="Enrollment Number"
+            android:layout_below="@id/st_name"/>
+        
+        <TextView 
+            android:id="@+id/st_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="email"
+            android:textSize="25sp"
+            android:layout_below="@id/st_enroll"/>
+        
+        <TextView 
+            android:id="@+id/st_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="contact number"
+            android:textSize="25sp"
+            android:layout_below="@id/st_email"
+            />
+        
+        <TextView 
+            android:id="@+id/st_branch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="branch"
+            android:textSize="25sp"
+            android:layout_below="@id/st_contact"
+            />
+        
+        <TextView 
+            android:id="@+id/st_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="year"
+            android:textSize="25sp"
+            android:layout_below="@id/st_branch"
+            />
+
+        
+        <Button 
+            android:id="@+id/st_discussion"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="View Discussion Forum"
+            android:layout_below="@id/st_year"/>
+        
+        <Button 
+            android:id="@+id/st_logout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Logout Me"
+            android:layout_below="@id/st_discussion"/>
+
+        <Button
+            android:id="@+id/st_website"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/st_logout"
+            android:text="Visit JIIT" />
+
+        <Button
+            android:id="@+id/st_webkiosk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/st_website"
+            android:text="Webliosk" />
+
+    </RelativeLayout>
+    
+
+</ScrollView>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/ask_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="WELCOME TO DISCUSSION FORUM"
+        android:textSize="20sp"
+        android:textColor="#c0362c" />
+
+    <TextView
+        android:id="@+id/ask_topic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ask_name"
+        android:text="Topic:"
+        android:textSize="25sp"
+        android:paddingTop="10dp"
+        android:textColor="#01a05f" />
+
+    <EditText
+        android:id="@+id/ask_et_topic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ask_topic"
+        android:ems="10"
+        android:textSize="25sp"
+        android:hint="Enter The Topic" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/ask_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ask_et_topic"
+        android:text="Detail:"
+        android:textSize="25sp"
+        android:textColor="#01a05f" />
+
+    <EditText
+        android:id="@+id/ask_et_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ask_question"
+        android:ems="50"
+        android:textSize="25sp"
+        android:hint="Enter Question" />
+
+    <Button
+        android:id="@+id/ask_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ask_et_question"
+        android:text="Submit" />
+
+</RelativeLayout>

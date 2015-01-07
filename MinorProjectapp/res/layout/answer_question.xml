@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question Id:"
+        android:textColor="#01a05f"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/tv_ques_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter Question Id" >
+
+        
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_ans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Answer:"
+        android:textColor="#01a05f"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/et_answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:hint="Enter Your Answer"
+         >
+    <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/btn_ans_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit Answer" />
+
+</LinearLayout>

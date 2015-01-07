@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#3b3b3b" >
+ 
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dip" >
+        <!--  View Title Label -->
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:text="REGISTER"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <!--  Name Label -->
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enrollment Number" />
+
+        <EditText
+            android:id="@+id/etenroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Name" />
+        <!--  Name TextField -->
+        <EditText
+            android:id="@+id/etname"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName" />
+         
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Email" />
+        <!--  Email TextField -->
+        <EditText
+            android:id="@+id/etemail"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress" />
+         
+        
+
+        <TextView
+            android:id="@+id/tvcontact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact Number" />
+
+        <EditText
+            android:id="@+id/etcontact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Password" />
+        <!--  Password TextField -->
+        <EditText
+            android:id="@+id/etpassword"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword" />
+         
+        <!--  Error message -->
+
+        <TextView
+            android:id="@+id/tvbranch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Branch"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/etbranch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10" />
+
+        <TextView
+            android:id="@+id/tvyear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Year" />
+
+        <EditText
+            android:id="@+id/etyear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10" />
+
+        <TextView android:id="@+id/register_error"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#e30000"
+                    android:padding="10dip"
+                    android:textStyle="bold"/>
+ 
+        <!--  Login Button -->
+       
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:text="Register" />
+ 
+        <!--  Link to Login Screen -->
+        <Button
+            android:id="@+id/btnLinkToLoginScreen"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dip"
+            android:background="@null"
+            android:text="Goto LoginPage"
+            android:textColor="#21dbd4"
+            android:textStyle="bold" />
+    </LinearLayout>
+ 
+</ScrollView>
